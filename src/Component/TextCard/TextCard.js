@@ -7,7 +7,7 @@ const TextCard = props => {
 
   const handleDelete = () => {
     if (!isDelete) {
-      console.log('Not Silindi', props.Text);
+      console.log('Not Silindi', props.text);
       setDelete(true);
     }
   };
@@ -19,7 +19,7 @@ const TextCard = props => {
     <View style={styles.container}>
       <View style={styles.noteContainer}>
         <View style={styles.icon} />
-        <Text style={styles.noteTextContainer}>{props.Text}</Text>
+        <Text style={styles.noteTextContainer}>{props.text}</Text>
       </View>
       <View style={styles.direction}>
         <View style={styles.deleteViewContainer}>
