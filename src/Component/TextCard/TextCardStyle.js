@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     width: '97%',
     height: 80,
     marginLeft: 5,
-
     flexDirection: 'row',
   },
   noteTextContainer: {
@@ -72,14 +71,15 @@ const styles = StyleSheet.create({
     margin: 1,
   },
   allContainerText: {
-    marginBottom: 80,
     backgroundColor: '#65947c',
     borderWidth: 1,
     borderColor: '#194d33',
     borderRadius: 20,
     margin: 8,
+    marginBottom: 50,
     position: 'absolute', // Mutlaka bu özelliği kullanın
-    bottom: 0, // Bu, alt sınırı belirler
+    bottom: 1, // Bu, alt sınırı belirler
+    flexDirection: 'row',
   },
   buttonViewTextContainer: {
     backgroundColor: '#194d33',
@@ -94,21 +94,20 @@ const styles = StyleSheet.create({
   },
   buttonTextContainer: {
     color: '#aab1b7',
-    padding: 7,
+    padding: 1,
     fontSize: 18,
     alignItems: 'center',
   },
   textInputContainer: {
     backgroundColor: '#65947c',
     height: 55,
-    borderBottomWidth: 1,
     borderColor: '#194d33',
-    width: 397,
-    paddingLeft: 25,
+    paddingLeft: 30,
+    paddingTop: 10,
     fontSize: 20,
+    width: 285,
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
   },
-  keybordContainer: {},
 });
 export default styles;
